@@ -13,7 +13,7 @@ echo "Creating snap: ${rootSnap}"
 zfs snapshot ${rootSnap}
 
 echo "Destroying old root clone: ${recoveryClone}"
-umount ${recoveryMount}
+mountpoint -q -- ${recoveryMount} && umount ${recoveryMount}
 zfs destroy ${recoveryClone}
 
 echo "Create new root clone: ${rootSnap} -> ${recoveryClone}"
