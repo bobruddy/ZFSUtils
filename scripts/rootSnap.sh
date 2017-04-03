@@ -3,7 +3,7 @@
 # This script will snapshot off root and also create the recovery clone
 
 # Setup
-TIMESTAMP=$(date +%G%m%e%H%M)
+TIMESTAMP=$(date +%G%m%d%H%M)
 rootFS="rpool/ROOT/ubuntu"
 rootSnap="${rootFS}@${TIMESTAMP}"
 recoveryClone="${rootFS}-recovery"

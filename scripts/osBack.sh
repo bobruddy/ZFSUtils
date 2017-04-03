@@ -3,7 +3,7 @@
 # This script will snapshot off root and also create the recovery clone
 
 # Setup
-day=$(date +%G%m%e%H%M)
+day=$(date +%G%m%d%H%M)
 rootPool="rpool"
 copies=7
 
